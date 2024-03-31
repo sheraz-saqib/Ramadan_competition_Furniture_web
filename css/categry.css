@@ -1,0 +1,148 @@
+.category_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    width: 100%;
+    min-height: 35rem;
+    margin-top: 2rem;
+
+}
+
+.cat_left {
+    position: relative;
+    /* background-color: red !important; */
+    background-image: url('../img/360_F_210111866_Q2RlopwHcon63GnIiAGKh9dnaJPQF2BV.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+.cat_right {
+    position: relative;
+    /* background-color: rgb(0, 255, 55) !important; */
+    background-image: url('../img/WhatsApp\ Image\ 2024-03-28\ at\ 17.37.27_8c25e01c.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+/* left banner */
+.cat_left .banner{
+    position: absolute;
+top: 5rem;
+right: 4rem;
+    width: 25rem;
+    height: 18rem;
+    background-color: rgba(255, 255, 255, 0.349);
+    backdrop-filter: blur(.3rem);
+    padding: 2rem;
+}
+
+.cat_left .banner .banner_header{
+    font-size: 1.2rem;
+    color: rgb(12, 12, 12);
+    font-weight: 500;
+    
+}
+.cat_left .banner .banner_header h3{
+border-bottom: 2px solid rgb(97, 97, 97);
+    width: 100%;
+}
+.cat_left .banner .banner_title {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+
+.cat_left .banner .banner_btn{
+    display: flex;
+        justify-content: flex-end;
+    margin-top: 2rem;
+}
+.cat_left .banner .banner_btn  a {
+    background-color: black;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 0.8rem;
+    transition: all .2s ease;
+    border: 2px solid transparent;
+
+}
+
+.cat_left .banner  .banner_btn a:hover {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+/* right banner */
+
+
+
+.cat_right .banner {
+    position: absolute;
+    top: 5rem;
+    left: 4rem;
+    width: 25rem;
+    height: 18rem;
+    background-color: rgba(255, 255, 255, 0.349);
+    backdrop-filter: blur(.3rem);
+    padding: 2rem;
+}
+
+.cat_right .banner .banner_header {
+    font-size: 1.2rem;
+    color: rgb(12, 12, 12);
+    font-weight: 500;
+
+}
+.cat_right .banner .banner_header h3 {
+    border-bottom: 2px solid rgb(97, 97, 97);
+    width: 100%;
+}
+.cat_right .banner .banner_title {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+
+.cat_right .banner .banner_btn {
+ 
+    margin-top: 2rem;
+}
+
+.cat_right .banner .banner_btn a {
+    background-color: black;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 0.8rem;
+    transition: all .2s ease;
+    border: 2px solid transparent;
+
+}
+
+.cat_right .banner .banner_btn a:hover {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+}
+
+@media only screen and (max-width:700px) {
+    .cat_right .banner,.cat_left .banner {
+    width: 20rem;   
+    }
+}
+@media only screen and (max-width:60.4375em) {
+    .category_section{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        min-height: 60rem;
+    }
+}
+
+@media only screen and (max-width:31.25em) {
+    
+   .cat_left .banner,.cat_right .banner{
+    left: 1.5rem;
+    
+   }
+   
+}

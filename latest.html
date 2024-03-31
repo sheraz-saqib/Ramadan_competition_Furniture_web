@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Products </title>    
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/mainSection.css">
+    <link rel="stylesheet" href="css/curser.css">
+    <link rel="stylesheet" href="css/categry.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="cuser_outlined"></div>
+    <div class="curser_dot"></div>
+    <!-- ---------navbar---------- -->
+    <div class="header">
+        <div class="nav">
+            <div class="bars" onclick="openSidebar()">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+        <div class="logo"><img src="img/logo.png" width="140px" style="padding-top: 1rem;"></div>
+           
+            <ul class="navbar">
+                <li class="navlink"><a href="index.html">Home</a></li>
+                <li class="navlink" id="drop"><a href="#">Categories
+                        <ul class="dropdownn">
+                        
+                            <li><a href="cat_bed.html">beds</a></li>
+                            <li><a href="cat_sofa.html">sofas</a></li>
+                            <li><a href="cat_chair.html">chairs</a></li>
+                            <li><a href="cat_dining.html">Dining table</a></li>
+                            <li><a href="cat_table.html">Tables</a></li>
+
+                          
+                        </ul>
+                    </a></li>
+                <li class="navlink"><a href="about.html">About Us</a></li>
+               
+                <li class="navlink" ><a href="contact.html">Contact Us</a></li>
+               
+                </ul>
+
+            <div class="icons">
+                <div class="search trigger" ><i class='bx bx-search-alt'></i></div>
+                <div class="basket" ><a href="cart.html" ><i class='bx bx-basket'></i></a><span class="cart-count" id="count"></span></div>
+                <div class="user"><a href=""><i class='bx bx-user'></i></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------sidebar---------- -->
+    <div id="mySidebar" class="sidebar">
+        <div class="topsidebar"> <h4>Menu</h4></div>
+        <a href="#" class="closebtn" onclick="closeSidebar()">&times;</a>
+       <br>
+       <br>
+        <a href="#" class="btn">Home</a>
+        <!-- <hr> -->
+        <a href="#" onclick="closeCate()" class="btn">Categories <i class="bx bxs-chevron-down" onclick="closeCate()" style=" float: right; font-size: 1rem !important; color: #0000008c !important; padding-right: 12px;"></i></a>
+        <ul class="dropdownn" id="responsive_dropdown">
+                        
+          <li><a href="cat_bed.html">beds</a></li>
+          <li><a href="cat_sofa.html">sofas</a></li>
+          <li><a href="cat_chair.html">chairs</a></li>
+          <li><a href="cat_dining.html">Dining table</a></li>
+          <li><a href="cat_table.html">Tables</a></li>
+
+          
+        </ul>
+        <!-- <hr> -->
+        <a href="about.html" class="btn">About Us </a>
+         <!-- <hr> -->
+         <a href="contact.html" class="btn">Contact Us</a>
+      </div>
+    <!-- -----------sidebar---------- -->
+    <!-- ------------navbar---------- -->
+    <br><br><br>
+    <!-- ----------latest collections-------- -->
+    <div class="latest" id="parent-search">
+        <h1>Latest Collection</h1>
+        <br>
+        <div class="products" style="flex-wrap: wrap; width: 90%; ">
+            <a href="latest_1.html" class="item" data-name="Comfy White Sofas">
+                <div class="image" style="background-image: url(./img/sofa.jpg);"></div>
+                <h4 class="title">Comfy White Sofas</h4>
+                <p class="price">RS 45,000</p>
+            </a>
+            <a href="latest_2.html" class="item">
+                <div class="image" style="background-image: url(./img/table.jpg);"></div>
+                <h4 class="title">Simple Dining Table</h4>
+                <p class="price">RS 15,000</p>
+            </a>
+            <a href="latest_3.html" class="item">
+                <div class="image" style="background-image: url(./img/wooden\ table.jpg);"></div>
+                <h4 class="title">Wooden Dining Table </h4>
+                <p class="price">RS 60,000</p>
+            </a>
+            <a  href="latest_4.html" class="item">
+                <div class="image" style="background-image: url(./img/coffe\ table.jpg);"></div>
+                <h4 class="title">Modern Coffee Table </h4>
+                <p class="price">RS 18,000</p>
+            </a>
+            <a  href="latest_5.html" class="item">
+                <div class="image" style="background-image: url(./img/bed.jpg);"></div>
+                <h4 class="title">Comfy Wooden Bed </h4>
+                <p class="price">RS 78,000</p>
+            </a>
+           
+            <a  href="latest_6.html" class="item">
+                <div class="image" style="background-image: url(./img/leaf\ print\ chairs.jpg);"></div>
+                <h4 class="title">Leaf Print Chairs</h4>
+                <p class="price">RS 18,000</p>
+            </a>
+            <a  href="latest_7.html" class="item">
+                <div class="image" style="background-image: url(./img/chair.jpg);"></div>
+                <h4 class="title">Modern Stylish Chair</h4>
+                <p class="price">RS 8,000</p>
+            </a>
+            <a  href="latest_8.html" class="item">
+                <div class="image" style="background-image: url(./img/ta1.webp);"></div>
+                <h4 class="title">Brown Working Table</h4>
+                <p class="price">RS 18,000</p>
+            </a>
+        </div>
+        <br>
+       
+    </div>
+    <!-- ----------latest collections-------- -->
+    <br><br>
+
+        <!-- ========== footer============= -->
+        <footer class="footer-distributed">
+    
+            <div class="footer-left">
+      
+              <h3> Furniture <span> Company </span></h3>
+      
+              <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                
+                <a href="#">Blog</a>
+              
+                <a href="#">Pricing</a>
+              
+                <a href="#">About</a>
+                
+                <a href="#">Faq</a>
+                
+                <a href="#">Contact</a>
+              </p>
+      
+              <p class="footer-company-name">Company Name © 2015</p>
+            </div>
+      
+            <div class="footer-center">
+      
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+1.555.555.5555</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
+              </div>
+      
+            </div>
+      
+            <div class="footer-right">
+      
+              <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+              </p>
+      
+              <div class="footer-icons">
+      
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+      
+              </div>
+      
+            </div>
+      
+          </footer>
+          <!-- ----------------footer------------------- -->
+    <!-- ----------search modal------- -->
+<div class="modal">
+    <div class="modal-content">
+        <div class="modal-top">
+            <div class="modal-search" >
+                <input type="text" id="search-val" onkeyup="search()"  placeholder="search here .. " >
+            </div>
+        <span class="close-button">×</span>
+    </div>
+   
+    <br>
+    <div class="search-content" id="product_result">
+
+    </div>
+    <br>
+    <div class="search-footer">
+        
+    </div>
+    </div>
+</div>
+    <!-- ----------search modal------- -->
+</body>
+<script src="js/cart.js"></script>
+<script>
+    if (cart.length == 0) {
+    count = 0;
+    console.log(count);
+    document.getElementById("count").innerHTML = count;
+} else {
+    var count = cart.length;
+    console.log(count);
+    document.getElementById("count").innerHTML = count;
+}
+</script>
+
+<script src="js/app.js"></script>
+<script src="js/search.js"></script>
+<script src="./js/fetch_category.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/curser.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>

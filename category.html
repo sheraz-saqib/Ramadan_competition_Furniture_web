@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="cuser_outlined"></div>
+    <div class="curser_dot"></div>
+
+    <!-- ---------navbar---------- -->
+    <div class="header">
+        <div class="nav">
+            <div class="bars" onclick="openSidebar()">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+        <div class="logo"><img src="img/logo.png" width="140px" style="padding-top: 1rem;"></div>
+           
+            <ul class="navbar">
+                <li class="navlink"><a href="index.html">Home</a></li>
+                <li class="navlink" id="drop"><a href="#">Categories
+                        <ul class="dropdownn">
+                        
+                            <li><a href="cat_bed.html">beds</a></li>
+                            <li><a href="cat_sofa.html">sofas</a></li>
+                            <li><a href="cat_chair.html">chairs</a></li>
+                            <li><a href="cat_dining.html">Dining table</a></li>
+                            <li><a href="cat_table.html">Tables</a></li>
+
+                          
+                        </ul>
+                    </a></li>
+                <li class="navlink"><a href="about.html">About Us</a></li>
+               
+                <li class="navlink" ><a href="contact.html">Contact Us</a></li>
+               
+                </ul>
+
+            <div class="icons">
+                <div class="search trigger" ><i class='bx bx-search-alt'></i></div>
+                <div class="basket" ><a href="cart.html" ><i class='bx bx-basket'></i></a><span class="cart-count" id="count"></span></div>
+                <div class="user"><a href=""><i class='bx bx-user'></i></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------sidebar---------- -->
+    <div id="mySidebar" class="sidebar">
+        <div class="topsidebar"> <h4>Menu</h4></div>
+        <a href="#" class="closebtn" onclick="closeSidebar()">&times;</a>
+       <br>
+       <br>
+        <a href="#" class="btn">Home</a>
+        <!-- <hr> -->
+        <a href="#" onclick="closeCate()" class="btn">Categories <i class="bx bxs-chevron-down" onclick="closeCate()" style=" float: right; font-size: 1rem !important; color: #0000008c !important; padding-right: 12px;"></i></a>
+        <ul class="dropdownn" id="responsive_dropdown">
+                        
+          <li><a href="cat_bed.html">beds</a></li>
+          <li><a href="cat_sofa.html">sofas</a></li>
+          <li><a href="cat_chair.html">chairs</a></li>
+          <li><a href="cat_dining.html">Dining table</a></li>
+          <li><a href="cat_table.html">Tables</a></li>
+
+          
+        </ul>
+        <!-- <hr> -->
+        <a href="about.html" class="btn">About Us </a>
+         <!-- <hr> -->
+         <a href="contact.html" class="btn">Contact Us</a>
+      </div>
+    <div class="content"></div>
+    <script src="fetch_category.js"></script>
+</html>

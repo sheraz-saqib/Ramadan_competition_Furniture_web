@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  list-style: none;
+}
+
+
+
+h1 {
+  font-weight: 100;
+}
+
+/* ----------cart css-------- */
+.cart-box {
+  width: 100%;
+  margin: 50 auto;
+
+}
+
+.top {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.top h2 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.top h2 {
+  width: 45%;
+  font-size: 2rem;
+}
+
+.top h3 {
+  font-size: 2rem;
+}
+
+.top h3::after {
+  content: " ";
+  display: block;
+  width: .9rem;
+  height: .2rem;
+  background-color: #4b2213 !important;
+  border-radius: 50%;
+  float: right;
+  margin-top: 1.4rem;
+  margin-left: .2rem;
+}
+
+.top h3::before {
+  content: " ";
+  display: block;
+  width: .9rem;
+  height: .2rem;
+  background-color: #4b2213 !important;
+  border-radius: 50%;
+  float: left;
+  margin-top: 1.4rem;
+  margin-left: -1.2rem
+}
+
+.shopping-cart {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#product {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #0000003a;
+}
+
+.product {
+  width: 100%;
+}
+
+.product:not(:last-child) {
+  border-bottom: 1px solid #0000003a;
+
+}
+
+.product,
+.product .cart_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product .product-image img {
+  width: 50%;
+  border: 1px solid #00000052;
+  padding: .5rem;
+}
+
+.product .product-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.product .product-image {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+.product .product-title {
+  color: #303030;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.product .product-price,
+.product .item_price {
+  padding: 1rem 2rem;
+  font-size: H1rem;
+}
+
+.product .product-quantity input {
+  margin: 1rem 1rem;
+  width: 5rem;
+  padding: .3rem .5rem;
+}
+
+.product .product-removal button {
+  background-color: #752a2a;
+  color: white;
+  border: none;
+  outline: none;
+  padding: .4rem 1.1rem;
+  margin: 1rem 2rem;
+  border-radius: .2rem;
+  font-size: 1rem;
+}
+
+.quantityminus,
+.quantityplus {
+  border: none;
+  outline: none;
+  padding: .1rem .5rem;
+  background-color: #000000;
+  border-radius: .2rem;
+  color: white;
+  margin: 0 .1rem;
+}
+
+.quantity {
+  width: 4rem;
+  text-align: center;
+}
+
+.check-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.checkout {
+  border: 1px solid #fff;
+  margin-top: 20px;
+  padding: .6rem 1rem;
+  background-color: #92b692;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 3px;
+}
+
+.All-Remove {
+  border: 0;
+  margin-top: 20px;
+  padding: .6rem 1rem;
+  background-color: #752a2a;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 3px;
+}
+
+.checkout:hover {
+  background-color: rgb(45, 70, 45)840;
+}
+
+h3 {
+  text-align: right;
+
+}
+
+.back_btn {
+  border: none;
+  outline: none;
+  width: 2.3rem;
+  height: 2.3rem;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5rem;
+}
+
+.back_btn i {
+  color: white;
+}
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 650px) {
+
+  .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid color-border;
+  }
+
+  .column-labels {
+    display: none;
+  }
+
+  .product-image {
+    float: right;
+    width: auto;   
+  }
+
+  .product-image img {
+    margin: 0 0 10px 10px;
+  }
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+
+  .product-quantity {
+    width: 100px;
+
+  
+  }
+  .product-quantity input {
+    margin-left: 20px;
+  }
+
+
+}
+
+  /* Make more adjustments for phone */
+  @media screen and (max-width: 350px) {
+
+    .product-removal {
+      float: right;
+    }
+
+    .product-line-price {
+      float: right;
+      clear: left;
+      width: auto;
+      margin-top: 10px;
+    }
+
+  
+
+   
+  }

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 4rem;
+    background-color: #fcfbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    margin-bottom: -0.6rem;
+
+}
+
+.navbar .navlink {
+    height: 2.5rem;
+    padding: 0.3rem 1.2rem;
+}
+
+.navbar .navlink a {
+    color: #000;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.navbar .dropdownn li {
+    height: 2rem;
+    padding: .4rem .5rem !important;
+    text-align: center !important;
+}
+
+.navbar .dropdownn li a {
+    color: #000;
+
+}
+
+.navbar .dropdownn {
+    width: 140%;
+    background-color: rgb(247, 245, 245);
+    margin: .3rem 0.4rem;
+    margin-left: -1.3rem;
+    display: none;
+    padding: 0.3rem 0.4rem;
+    position: relative;
+    z-index: 9999 !important;
+    transition: ease-in 2s;
+    color: #929292;
+    border-radius: .4rem;
+}
+
+#drop {
+    width: 9rem;
+}
+
+.navbar #drop:hover .dropdownn {
+    display: block;
+}
+
+.icons {
+    border-radius: 20%;
+    /* background-color: #f3f3f3; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons .search,
+.icons .basket,
+.icons .user {
+    font-size: 1.5rem;
+    padding: 0 .6rem;
+    position: relative;
+}
+.user a ,.basket a , .search {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+.cart-count {
+    content: " ";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #5e4a29;
+    position: absolute;
+    top: 0;
+    right:0;
+    margin-left: .2rem;
+    color: #ffffffe3;
+    text-align: center;
+    font-size: .6rem;
+    padding-top:.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bars {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: .2rem .2rem;
+    display: none;
+}
+
+.bars i {
+    font-size: 1.5rem;
+    transform: rotate(180deg);
+
+}
+
+.logo {
+    font-size: 2.1rem;
+}
+
+@media only screen and (max-width:1320px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        width: 90%;
+        padding: 0 1rem;
+
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        width: 100%;
+        padding: 0 1rem;
+
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        width: 100%;
+        padding: 0 0rem;
+
+    }
+
+    .navbar .navlink a {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width:780px) {
+    .header {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        width: 100%;
+        padding: 0 0rem;
+
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .bars {
+        display: block;
+    }
+
+}
+
+/* -- -----------sidebar---------- -- */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.topsidebar {
+    width: 100%;
+    height: 50px;
+    background-color: #111921;
+}
+
+.topsidebar h4 {
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: .2rem;
+    padding: 1rem 2rem;
+
+}
+
+hr {
+    margin: .2rem 1.8rem;
+    color: #d1d1d11e !important;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #0000003a;
+    display: block;
+    padding: .5rem 1.2rem;
+
+
+}
+
+.sidebar a:hover {
+    color: #000000;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: -.2rem;
+    right: 5px;
+    color: white;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
+.closebtn:hover {
+    color: #ffffffaf !important;
+}
+
+.btnclose {
+    display: none;
+    transition: 0.1ms;
+}
+
+#responsive_dropdown {
+    display: none;
+
+}
+
+.display_cate {
+    display: block !important;
+}
+
+.display_cate li a {
+    color: #000000de !important;
+}
+
+/* -- -----------sidebar---------- -- */

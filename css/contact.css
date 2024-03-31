@@ -1,0 +1,236 @@
+/* ----------------feedback------- */
+.container {
+    width: 80% !important;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    margin: auto;
+}
+
+#contact-container {
+    background: #ffffff;
+    box-shadow: 2px 2px 26px #ecebeb;
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 20rem !important;
+    width: 2px;
+    right: -47%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #b8b7b7;
+}
+
+.left-side-img {
+    width: 250px;
+
+}
+
+.left-side-img img {
+    width: 380px;
+    /* -webkit-transform: scaleX(-1);
+transform: scaleX(-1); */
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+    font-size: 14px;
+    color: gray;
+}
+
+.container .content .right-side {
+    width: 60%;
+    margin-left: 3px;
+}
+
+.content .right-side .topic-text2 {
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 2.3rem;
+    color: rgb(87, 87, 87);
+    text-align: center;
+
+    letter-spacing: 2px;
+}
+
+.content .right-side .topic-text {
+    font-size: 2.2rem;
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+    background-color: transparent !important;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 95%;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    border: 2px solid #a3b3b098;
+    background: transparent !important;
+    border-radius: 10px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box2 {
+    min-height: 110px;
+}
+
+.message-box2 input::placeholder,
+.input-box input::placeholder {
+    float: left;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button5 {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button5 input[type="submit"] {
+    color: white;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    background: #5e4a29;
+    cursor: pointer;
+    width: 130px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.button5 input[type="submit"]:hover {
+    background: black;
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+
+    .container .content .right-side {
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 820px) {
+    .container {
+        margin: 40px 0;
+        height: 100%;
+    }
+
+    .container .content {
+        flex-direction: column-reverse;
+    }
+
+    .container .content .left-side {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .content .left-side::before {
+        display: none;
+    }
+
+    .container .content .right-side {
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .left-side-img img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .container {
+        margin: auto;
+    }
+
+    .left-side-img img {
+        width: 100%;
+    }
+}
+
+.container {
+    background: none;
+}
+
+@media only screen and (max-width:600px) {
+    .left-side-img {
+        width: 350px;
+    }
+
+    .left-side-img img {
+        width: 100%;
+    }
+}
+
+.main3hd {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main3hd h1 {
+    color: #000;
+    /* color: #6C757D; */
+    font-size: 1.7rem;
+}
+
+.main3hd h2 {
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 800;
+    text-align: center;
+    opacity: .2;
+    margin: 1rem 1rem;
+}
+
+/* ----------------feedback------- */
